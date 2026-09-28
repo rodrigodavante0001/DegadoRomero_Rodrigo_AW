@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Formulario de Contacto</title>
+</head>
+<body>
+
+<h1>Formulario de Contacto</h1>
+
+<a href="index.html">Currículum</a>
+<br><br>
+<a href="horario.html">Horario</a>
+
+<hr>
+
+<form action="datos.php" method="post">
+
+<fieldset>
+<legend>Datos personales</legend>
+
+<label for="nombre">Nombre:</label><br>
+<input type="text" id="nombre" name="nombre"
+placeholder="Introduzca su nombre"><br><br>
+
+<label for="apellidos">Apellidos:</label><br>
+<input type="text" id="apellidos" name="apellidos"
+placeholder="Introduzca sus apellidos"><br><br>
+
+<label for="correo">Correo electrónico:</label><br>
+<input type="email" id="correo" name="correo"
+placeholder="Introduzca su correo"><br><br>
+
+<label for="clave">Contraseña:</label><br>
+<input type="password" id="clave" name="clave"
+placeholder="Introduzca su contraseña"><br><br>
+
+<label for="edad">Edad:</label><br>
+<input type="number" id="edad" name="edad" value="18">
+
+</fieldset>
+
+<br>
+
+<fieldset>
+<legend>Ciudad de Andalucía</legend>
+
+<select name="ciudad">
+<option value="jaen">Jaén</option>
+<option value="granada">Granada</option>
+<option value="cordoba">Córdoba</option>
+<option value="sevilla">Sevilla</option>
+<option value="malaga">Málaga</option>
+<option value="almeria">Almería</option>
+<option value="cadiz">Cádiz</option>
+<option value="huelva">Huelva</option>
+</select>
+
+</fieldset>
+
+<br>
+
+<fieldset>
+<legend>Aficiones</legend>
+
+<input type="checkbox" id="videojuegos" name="aficiones" checked>
+<label for="videojuegos">Videojuegos</label><br>
+
+<input type="checkbox" id="musica" name="aficiones">
+<label for="musica">Música</label><br>
+
+<input type="checkbox" id="deporte" name="aficiones">
+<label for="deporte">Deporte</label><br>
+
+<input type="checkbox" id="cine" name="aficiones">
+<label for="cine">Cine</label><br>
+
+<input type="checkbox" id="lectura" name="aficiones">
+<label for="lectura">Lectura</label>
+
+</fieldset>
+
+<br>
+
+<fieldset>
+<legend>Mensaje</legend>
+
+<label for="mensaje">Escribe tu mensaje:</label><br>
+<textarea id="mensaje" name="mensaje"
+rows="8" cols="40"></textarea>
+
+</fieldset>
+
+<br>
+
+<input type="submit" value="Enviar">
+<input type="reset" value="Borrar">
+
+</form>
+
+</body>
+</html>
